@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>CrystalsCollector</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div id="title">
+    	<h1>CrystalsCollector!</h1>
+    </div>
+
+    <div id="gameDescription" class="text-center">
+        <p>You will be given a random number at the start of the game.</p>
+        <br>
+        <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+        <br>
+        <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+        <br>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <br>
+        <p>Each time when the game starts the game will change the values of each crystal.</p>
+    </div>
+
+    <div class="clearFix">
+        <div id="randomNumber"></div>
+        <div id="totals" class="text-center">
+            <div id="resultText"></div>
+            <div>Wins: <span id="wins"></span></div>
+            <div>Losses: <span id="losses"></span></div>
+        </div>
+    </div>
+
+    <div id="crystals"></div>
+
+    <div id="totalText">Your total score is:</div>
+    <div class="totalNumber" id="currentScore"></div>
+    
+</body>
+
+</html>
